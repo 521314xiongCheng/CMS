@@ -1,0 +1,31 @@
+@blackBgColor: #001529;
+@blackFontColor: rgba(255, 255, 255, 0.7);
+@blackHoverBgColor: #263445;
+@blackHoverFontColor: #fff;
+/*
+ * 1、顶部navbar颜色
+ */
+ .black-theme .app-menu {
+    width: 200px;
+    /deep/.el-menu {
+      height: 100%;
+      background-color: #001529;;
+      .el-submenu__title,
+      .el-menu-item {
+        color: rgba(255, 255, 255, 0.7);;
+        &:hover {
+          background-color: #263445; !important;
+          color: @fff;
+        }
+      }
+    }
+  }
+  .black-theme .el-aside {
+    width: inherit !important;
+    background-color: #001529;;
+  }
+
+  .black-theme .app-header {
+    background: #001529;;
+    color:  #fff;
+  }

@@ -1,0 +1,37 @@
+applications:
+  - name: ContentCMS
+    instances: 1
+    memory: 1024M
+    buildpack: nodejs_buildpack_mkc14
+    stack: cflinuxfs3
+    command: node ./bin/www
+    disk_quota: 300M
+    env:
+      NODE_ENV: dev
+      REALMURL_EXTERNAL: https://xxxxxxx.com/xxxxxx
+      REALMURL_INTERNAL: https://xxxxxxx.com/xxxxxx
+      RETURN_URL_INTERNAL: http://localhost:3002
+      RETURN_URL_EXTERNAL: http://localhost:3002
+      ISSUER_VALUE_INTERNAL: https://xxxxxxxx
+      ISSUER_VALUE_EXTERNAL: https://xxxxxxxx
+      CLIENT_KEY: xxxxxxx
+      API_URL: http://xxxxxxxxx
+      API_URL_v2: http://xxxxxxx
+      CATALOG_CLIENT_KEY: xxxxxxx
+      Catalog_API_URL: https://xxxxxxxx
+      Product_API_URL: https://xxxxxxxx
+      Article_API_URL: https://xxxxxxxx
+      Dashboard_API_URL: http://xxxxxxxxinternal/dashboard
+      Weather_API_URL: https://xxxxxxxx
+      Weather_CLIENT_KEY: xxxxxxxx
+      BAIDU_APP_ID: 'xxxxxxxx'
+      BAIDU_API_KEY: 'xxxxxxxx'
+      BAIDU_SECRET_KEY: 'xxxxxxxx'
+      xxxxxxx_TOPIC_API_URL: 'http://xxxxxxxx'
+      xxxxxxx_TOPIC_CLIENT_KEY: xxxxxxxx
+      xxxxxxx_POWER_API_URL: 'http://xxxxxxxx.dev.pcf-internal.xxxxxxxx.io'
+      xxxxxxx_POWER_CLIENT_KEY: xxxxxxxx
+      ONE_IM_SVC: http://xxxxxxxx.io/v1
+      EntWechat_API_URL: "http://xxxxxxxx"
+      EntWechat_CLIENT_KEY: xxxxxxxx
+      xxxxxxx_APP_SERVICE_URL: "https://xxxxxxxx/"
